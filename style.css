@@ -1,0 +1,52 @@
+body {
+  background-color: #0a0a23;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.contact-form, .contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  padding: 0.75rem 2rem;
+  background: #f4b400;
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.captcha {
+  background: white;
+  color: black;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.social-icons img {
+  width: 32px;
+  margin-right: 10px;
+}
