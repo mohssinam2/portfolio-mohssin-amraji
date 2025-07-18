@@ -2,76 +2,132 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mon Portfolio – Mohssin Amraji</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Mohssin Amraji</title>
+  
+  <!-- Font Awesome CDN for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- SECTION: ACCUEIL -->
-  <section id="home">
-    <h1>Salut, je suis Mohssin Amraji</h1>
-    <p>Développeur Web & Étudiant en ingénierie IIR</p>
-  </section>
+  <!-- En-tête -->
+  <header>
+    <h1>Mohssin Amraji</h1>
+    <p>Développeur Web & Étudiant en ingénierie informatique</p>
+  </header>
 
-  <!-- SECTION: À PROPOS -->
+  <!-- À propos de moi -->
   <section id="about">
     <h2>À propos de moi</h2>
-    <p>Passionné par la technologie et le développement web, j'étudie l'ingénierie informatique à l'EMSI. J'aime créer des interfaces web modernes et dynamiques.</p>
+    <p>
+      Je suis étudiant en ingénierie informatique passionné par le développement web.  
+      J'aime créer des sites modernes et performants tout en apprenant constamment de nouvelles technologies.  
+      Je suis motivé par les défis et l'amélioration continue.
+    </p>
   </section>
 
-  <!-- SECTION: COMPÉTENCES -->
+  <!-- Compétences -->
   <section id="skills">
     <h2>Compétences</h2>
+    <div class="skills-container">
+      <!-- Garde ici tout ton code skills existant -->
+      <!-- ... -->
+    </div>
+  </section>
+
+  <!-- Projets -->
+  <section id="portfolio">
+    <h2>Projets</h2>
+    <div class="projects-container">
+      <div class="project">
+        <h3>Projet 1</h3>
+        <p>Site web responsive réalisé pour un client local.</p>
+        <a href="#" target="_blank">Voir le projet</a>
+      </div>
+      <div class="project">
+        <h3>Projet 2</h3>
+        <p>Application  pour la gestion d'une salle de sport .</p>
+        <a href="#" target="_blank">Voir le projet</a>
+      </div>
+      <!-- Ajoute d'autres projets si tu veux -->
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Services que je propose</h2>
     <ul>
-      <li>HTML / CSS / JavaScript</li>
-      <li>React / Vue (bases)</li>
-      <li>Git & GitHub</li>
-      <li>Responsive Design</li>
-      <li>Python / SQL</li>
+      <li>Développement de sites web responsives</li>
+      <li>Création d’interfaces utilisateur modernes</li>
+      <li>Optimisation SEO</li>
+      <li>Maintenance et support technique</li>
     </ul>
   </section>
 
-  <!-- SECTION: PROJETS -->
-  <section id="projects">
-    <h2>Projets</h2>
-    <div class="project">
-      <h3>Portfolio personnel</h3>
-      <p>Un site web responsive pour présenter mon parcours et mes compétences.</p>
-    </div>
-    <div class="project">
-      <h3>Gestion de tâches</h3>
-      <p>Application web pour gérer des tâches personnelles avec JavaScript.</p>
-    </div>
-  </section>
-
-  <!-- SECTION: EXPÉRIENCE -->
-  <section id="experience">
-    <h2>Expérience</h2>
-    <div class="experience-item">
-      <h3>Stage Front-End - XYZ Tech</h3>
-      <span>Janvier 2024 – Juin 2024</span>
-      <p>Développement de pages web dynamiques et adaptatives.</p>
-    </div>
-  </section>
-
-  <!-- SECTION: CONTACT -->
+  <!-- Contact -->
   <section id="contact">
-    <h2>Contact</h2>
-    <form>
+    <h2>Contactez-moi</h2>
+
+    <div class="contact-info">
+      <p><i class="fab fa-whatsapp" style="color:#25D366;"></i> WhatsApp : <a href="https://wa.me/21267807883" target="_blank">+212 6 78 07 88 3</a></p>
+      <p><i class="fas fa-envelope" style="color:#D44638;"></i> E-mail : <a href="mailto:mohsin.2016.amraji@gmail.com">mohsin.2016.amraji@gmail.com</a></p>
+      <p><i class="fab fa-github" style="color:#333;"></i> GitHub : <a href="https://github.com/mohssinamraji" target="_blank">github.com/mohssinamraji</a></p>
+    </div>
+
+    <form id="contactForm">
       <input type="text" placeholder="Votre nom" required />
       <input type="email" placeholder="Votre e-mail" required />
       <textarea placeholder="Votre message" required></textarea>
       <button type="submit">Envoyer</button>
     </form>
-    <p>Email : mohsin.2016.amraji@gmail.com</p>
-    <p>Téléphone : 06 17 92 62 29</p>
-    <div class="social-icons">
-      <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-      <a href="#"><img src="github-icon.png" alt="GitHub"></a>
-    </div>
   </section>
 
+  <!-- Script JS -->
   <script src="script.js"></script>
+
 </body>
 </html>
+<section id="languages">
+  <h2>Langages & Certifications</h2>
+  <div class="languages-container">
+    <div class="language">
+      <img src="images/c-logo.png" alt="C" class="language-img" />
+      <p>C</p>
+    </div>
+    <div class="language">
+      <img src="images/cpp-logo.png" alt="C++" class="language-img" />
+      <p>C++</p>
+    </div>
+    <div class="language">
+      <i class="fab fa-js" style="color:#F7DF1E;"></i>
+      <p>JavaScript</p>
+      <small>Certification Coursera ✅</small>
+    </div>
+    <div class="language">
+      <i class="fab fa-html5" style="color:#E34F26;"></i>
+      <p>HTML5</p>
+    </div>
+    <div class="language">
+      <i class="fas fa-database" style="color:#4DB33D;"></i>
+      <p>SQL</p>
+    </div>
+    <div class="language">
+      <img src="images/php-logo.png" alt="PHP" class="language-img" />
+      <p>PHP</p>
+    </div>
+    <div class="language">
+      <i class="fab fa-python" style="color:#3776AB;"></i>
+      <p>Python</p>
+      <small>Certification Coursera ✅</small>
+    </div>
+    <div class="language">
+      <img src="images/java-logo.png" alt="Java" class="language-img" />
+      <p>Java</p>
+    </div>
+  </div>
+</section>
