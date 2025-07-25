@@ -3,106 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio de Mohssin Amraji, étudiant en ingénierie informatique et développeur web.">
+  <meta name="keywords" content="Mohssin Amraji, développeur web, EMSI, portfolio, projets web, HTML CSS JS PHP">
   <title>Portfolio Mohssin Amraji</title>
   
   <!-- Font Awesome CDN for icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Navigation -->
+  <nav>
+    <ul class="navbar">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#portfolio">Projets</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="CV-AMRAJI-MOHSSIN.pdf" download>Télécharger CV</a></li>
+    </ul>
+  </nav>
 
-  <!-- En-tête -->
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Bienvenue sur mon portfolio</h1>
+    <p>Je conçois des solutions numériques modernes & performantes</p>
+    <a href="#contact" class="btn">Travaillons ensemble</a>
+  </section>
+
+  <!-- Header with Profile -->
   <header>
+    <img src="Capture d’écran 2025-07-25 110619" alt="Photo de Mohssin Amraji" class="profile-photo" />
     <h1>Mohssin Amraji</h1>
     <p>Développeur Web & Étudiant en ingénierie informatique</p>
   </header>
 
-  <!-- À propos de moi -->
-  <section id="about">
-    <h2>À propos de moi</h2>
-    <p>
-      Je suis étudiant en ingénierie informatique passionné par le développement web.  
-      J'aime créer des sites modernes et performants tout en apprenant constamment de nouvelles technologies.  
-      Je suis motivé par les défis et l'amélioration continue.
-    </p>
-  </section>
+  <!-- Main Content Sections -->
+  <main>
+    <!-- About Section -->
+    <section id="about" data-aos="fade-up">
+      <h2>À propos de moi</h2>
+      <p>
+        Je suis étudiant en ingénierie informatique passionné par le développement web.  
+        J'aime créer des sites modernes et performants tout en apprenant constamment de nouvelles technologies.  
+        Je suis motivé par les défis et l'amélioration continue.
+      </p>
+    </section>
 
-  <!-- Compétences -->
-  <section id="skills">
-    <h2>Compétences</h2>
-    <div class="skills-container">
-      <!-- Garde ici tout ton code skills existant -->
-      <!-- ... -->
-    </div>
-  </section>
-
-  <!-- Projets -->
-  <section id="portfolio">
-    <h2>Projets</h2>
-    <div class="projects-container">
-      <div class="project">
-        <h3>Projet 1</h3>
-        <p>Site web responsive réalisé pour un client local.</p>
-        <a href="#" target="_blank">Voir le projet</a>
+    <!-- Skills Section -->
+    <section id="skills" data-aos="fade-up">
+      <h2>Compétences</h2>
+      <div class="skills-container">
+        <!-- Your skills content here -->
       </div>
-      <div class="project">
-        <h3>Projet 2</h3>
-        <p>Application  pour la gestion d'une salle de sport .</p>
-        <a href="#" target="_blank">Voir le projet</a>
-      </div>
-      <!-- Ajoute d'autres projets si tu veux -->
-    </div>
-  </section>
+    </section>
 
-  <!-- Services -->
-  <section id="services">
-    <h2>Services que je propose</h2>
-    <ul>
-      <li>Développement de sites web responsives</li>
-      <li>Création d’interfaces utilisateur modernes</li>
-      <li>Optimisation SEO</li>
-      <li>Maintenance et support technique</li>
-    </ul>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contactez-moi</h2>
-
-    <div class="contact-info">
-      <p><i class="fab fa-whatsapp" style="color:#25D366;"></i> WhatsApp : <a href="https://wa.me/21267807883" target="_blank">+212 6 78 07 88 3</a></p>
-      <p><i class="fas fa-envelope" style="color:#D44638;"></i> E-mail : <a href="mailto:mohsin.2016.amraji@gmail.com">mohsin.2016.amraji@gmail.com</a></p>
-      <p><i class="fab fa-github" style="color:#333;"></i> GitHub : <a href="https://github.com/mohssinamraji" target="_blank">github.com/mohssinamraji</a></p>
-    </div>
-
-    <form id="contactForm">
-      <input type="text" placeholder="Votre nom" required />
-      <input type="email" placeholder="Votre e-mail" required />
-      <textarea placeholder="Votre message" required></textarea>
-      <button type="submit">Envoyer</button>
-    </form>
-  </section>
-
-  <!-- Script JS -->
-  <script src="script.js"></script>
-
-</body>
-</html>
-<section id="languages">
-  <h2>Langages & Certifications</h2>
-  <div class="languages-container">
-    <div class="language">
-      <img src="images/c-logo.png" alt="C" class="language-img" />
+    <!-- Languages Section -->
+    <section id="languages" data-aos="fade-up">
+      <h2>Langages & Certifications</h2>
+      <div class="languages-container">
+          <div class="language">
+ <i class="fab fa-c" style="color:#3f37ab;"></i>
       <p>C</p>
     </div>
-    <div class="language">
-      <img src="images/cpp-logo.png" alt="C++" class="language-img" />
-      <p>C++</p>
-    </div>
+    
     <div class="language">
       <i class="fab fa-js" style="color:#F7DF1E;"></i>
       <p>JavaScript</p>
@@ -117,7 +84,7 @@
       <p>SQL</p>
     </div>
     <div class="language">
-      <img src="images/php-logo.png" alt="PHP" class="language-img" />
+       <i class="fab fa-php" style="color:#ab3737;"></i>
       <p>PHP</p>
     </div>
     <div class="language">
@@ -126,8 +93,82 @@
       <small>Certification Coursera ✅</small>
     </div>
     <div class="language">
-      <img src="images/java-logo.png" alt="Java" class="language-img" />
+       <i class="fab fa-java" style="color:#ab3754;"></i>
       <p>Java</p>
     </div>
   </div>
-</section>
+    
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" data-aos="fade-up">
+      <h2>Parcours Académique</h2>
+      <ul class="timeline">
+        <li><strong>2022-2025</strong> - EMSI, Ingénierie Informatique</li>
+        <li><strong>2021</strong> - Baccalauréat Sciences Physiques</li>
+      </ul>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" data-aos="fade-up">
+      <h2>Projets</h2>
+      <div class="projects-container">
+        <div class="project">
+          <h3>Projet 1</h3>
+          <p>Site web responsive réalisé pour un client local.</p>
+          <a href="#" target="_blank">Voir le projet</a>
+        </div>
+        <div class="project">
+          <h3>Projet 2</h3>
+          <p>Application pour la gestion d'une salle de sport.</p>
+          <a href="#" target="_blank">Voir le projet</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" data-aos="fade-up">
+      <h2>Services que je propose</h2>
+      <ul>
+        <li>Développement de sites web responsives</li>
+        <li>Création d'interfaces utilisateur modernes</li>
+        <li>Optimisation SEO</li>
+        <li>Maintenance et support technique</li>
+      </ul>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" data-aos="fade-up">
+      <h2>Témoignages</h2>
+      <div class="testimonial">
+        <p>"Mohssin a créé un site web exceptionnel pour notre entreprise !"</p>
+        <strong>— Client A</strong>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-up">
+      <h2>Contactez-moi</h2>
+      <div class="contact-info">
+        <p><i class="fab fa-whatsapp" style="color:#25D366;"></i> WhatsApp : <a href="https://wa.me/21267807883" target="_blank">+212 6 78 07 88 3</a></p>
+        <p><i class="fas fa-envelope" style="color:#D44638;"></i> E-mail : <a href="mailto:mohsin.2016.amraji@gmail.com">mohsin.2016.amraji@gmail.com</a></p>
+        <p><i class="fab fa-github" style="color:#333;"></i> GitHub : <a href="https://github.com/mohssinamraji" target="_blank">github.com/mohssinamraji</a></p>
+      </div>
+
+      <form id="contactForm">
+        <input type="text" placeholder="Votre nom" required />
+        <input type="email" placeholder="Votre e-mail" required />
+        <textarea placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
